@@ -4,7 +4,7 @@ IF NOT EXISTS (
   SELECT * FROM sys.tables WHERE name = 'Customers'
 )
 BEGIN
-  CREATE TABLE ExampleTable (
+  CREATE TABLE Customers (
     Id INT PRIMARY KEY,
     Name NVARCHAR(50)
   );
