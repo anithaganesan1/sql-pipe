@@ -1,4 +1,4 @@
-USE NetEmployeeDB;
+USE loginsampleDB;
 
 IF NOT EXISTS (
   SELECT * FROM sys.tables WHERE name = 'ExampleTable'
