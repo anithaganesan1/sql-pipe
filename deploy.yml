@@ -1,7 +1,7 @@
 USE loginsampleDB;
 
 IF NOT EXISTS (
-  SELECT * FROM sys.tables WHERE name = 'ExampleTable'
+  SELECT * FROM sys.tables WHERE name = 'Customers'
 )
 BEGIN
   CREATE TABLE ExampleTable (
