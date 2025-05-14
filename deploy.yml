@@ -1,0 +1,12 @@
+USE NetEmployeeDB;
+
+IF NOT EXISTS (
+  SELECT * FROM sys.tables WHERE name = 'ExampleTable'
+)
+BEGIN
+  CREATE TABLE ExampleTable (
+    Id INT PRIMARY KEY,
+    Name NVARCHAR(50)
+  );
+
+END;
